@@ -3,6 +3,14 @@ class Part  {
     this.type = type;
     this.broken = false;
   }
+
+  break() {
+    this.broken = true;
+  }
+
+  repair()  {
+    this.broken = false;
+  }
 }
 
 module.exports = Part;

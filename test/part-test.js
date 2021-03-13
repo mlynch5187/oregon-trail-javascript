@@ -18,7 +18,7 @@ describe('Part', function() {
     assert.equal(yoke.broken, false);
   });
 
-  it.skip('should be able to be broken', function() {
+  it('should be able to be broken', function() {
     var wheel = new Part('wheel');
     var yoke = new Part('yoke');
 
@@ -29,7 +29,7 @@ describe('Part', function() {
     assert.equal(wheel.broken, true);
   });
 
-  it.skip('should be able to be repaired', function() {
+  it('should be able to be repaired', function() {
     var yoke = new Part('yoke');
 
     yoke.break();
