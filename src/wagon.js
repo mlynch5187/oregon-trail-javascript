@@ -35,6 +35,15 @@ class Wagon {
     if (part.type = 'wheel')  {
       this.wheels.push(part)
     }
+    if (part.type = 'axle')  {
+      this.axles.push(part)
+    }
+    if (part.type = 'ox')  {
+      this.oxen.push(part)
+    }
+    if (part.type = 'yoke')  {
+      this.yokes.push(part)
+    }
   }
 }
 
