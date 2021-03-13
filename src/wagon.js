@@ -2,6 +2,7 @@ class Wagon {
   constructor(obj) {
     obj = obj || {};
     this.title = obj.name;
+    this.food = obj.food;
     if (obj.wheels === undefined)  {
       this.wheels = [];
     } else {
