@@ -1,6 +1,7 @@
 class Settler {
-  constructor() {
-
+  constructor(obj) {
+    obj = obj || {};
+    this.name = obj.name;
   }
 }
 
