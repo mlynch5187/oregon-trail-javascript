@@ -14,7 +14,11 @@ class Settler {
 
   experienceDistress(distress)  {
     this.ailments.push(distress)
-    this.status = 'fair'
+    if (this.ailments.length === 1) {
+      this.status = 'fair'
+    } else if (this.ailments.length === 2) {
+      this.status = 'poor'
+    }
   }
 }
 
