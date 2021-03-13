@@ -50,6 +50,10 @@ class Wagon {
       this.yokes.push(part)
     }
   }
+
+  canTravel() {
+    return true
+  }
 }
 
 module.exports = Wagon;

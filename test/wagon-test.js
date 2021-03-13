@@ -179,7 +179,7 @@ describe('Wagon', function() {
     return wagon;
   }
 
-  it.skip('should be able to travel as a valid wagon', function() {
+  it('should be able to travel as a valid wagon', function() {
     var wagon = makeValidWagon();
 
     assert.isTrue(wagon.canTravel());
