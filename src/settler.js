@@ -4,6 +4,7 @@ class Settler {
     this.name = obj.name;
     this.age = obj.age;
     this.status = 'healthy'
+    this.ailments = [];
     if (obj.nationality === undefined)  {
       this.nationality = 'unknown'
     } else {
