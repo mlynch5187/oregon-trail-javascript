@@ -29,6 +29,11 @@ class Wagon {
     } else {
       this.clothes = obj.clothes;
     }
+    if (obj.settlers === undefined)  {
+      this.settlers = [];
+    } else {
+      this.settlers = obj.settlers;
+    }
   }
 
   addPart(part) {
