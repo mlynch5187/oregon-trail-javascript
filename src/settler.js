@@ -13,13 +13,15 @@ class Settler {
   }
 
   experienceDistress(distress)  {
-    this.ailments.push(distress)
-    if (this.ailments.length === 1) {
-      this.status = 'fair'
-    } else if (this.ailments.length === 2) {
-      this.status = 'poor'
-    } else if (this.ailments.length >= 3) {
-      this.status = 'dead'
+    if (this.status !== 'dead')  {
+      this.ailments.push(distress)
+      if (this.ailments.length === 1) {
+        this.status = 'fair'
+      } else if (this.ailments.length === 2) {
+        this.status = 'poor'
+      } else if (this.ailments.length === 3) {
+        this.status = 'dead'
+      }
     }
   }
 }
