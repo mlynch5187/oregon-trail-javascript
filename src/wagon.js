@@ -61,7 +61,9 @@ class Wagon {
         this.wheels[0].broken === false &&
         this.wheels[1].broken === false &&
         this.wheels[2].broken === false &&
-        this.wheels[3].broken === false)  {
+        this.wheels[3].broken === false &&
+        this.axles[0].broken === false &&
+        this.axles[0].broken === false)  {
       return true;
     } else {
       return false;
