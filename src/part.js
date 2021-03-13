@@ -1,6 +1,6 @@
 class Part  {
-  constructor() {
-
+  constructor(type) {
+    this.type = type;
   }
 }
 
