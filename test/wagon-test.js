@@ -201,7 +201,7 @@ describe('Wagon', function() {
     assert.isFalse(wagon.canTravel());
   });
 
-  it.skip('should not be able to travel with less than 2 oxen', function() {
+  it('should not be able to travel with less than 2 oxen', function() {
     var wagon = makeValidWagon();
 
     wagon.oxen.pop();
