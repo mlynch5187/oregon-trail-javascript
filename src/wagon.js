@@ -3,6 +3,7 @@ class Wagon {
     obj = obj || {};
     this.title = obj.name;
     this.food = obj.food;
+    this.ammunition = obj.ammunition;
     if (obj.wheels === undefined)  {
       this.wheels = [];
     } else {
