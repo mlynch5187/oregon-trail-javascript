@@ -11,6 +11,11 @@ class Settler {
       this.nationality = obj.nationality;
     }
   }
+
+  experienceDistress(distress)  {
+    this.ailments.push(distress)
+    this.status = 'fair'
+  }
 }
 
 module.exports = Settler;
