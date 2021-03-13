@@ -17,6 +17,11 @@ class Wagon {
     } else {
       this.oxen = obj.oxen;
     }
+    if (obj.yokes === undefined)  {
+      this.yokes = [];
+    } else {
+      this.yokes = obj.yokes;
+    }
   }
 }
 

@@ -55,13 +55,13 @@ describe('Wagon', function() {
     assert.deepEqual(wagon.oxen, [ox1, ox2]);
   });
 
-  it.skip('should have no yokes by default', function() {
+  it('should have no yokes by default', function() {
     var wagon = new Wagon({ name: 'New Horizons' });
 
     assert.deepEqual(wagon.yokes, []);
   });
 
-  it.skip('should be able to be constructed with yokes', function() {
+  it('should be able to be constructed with yokes', function() {
     var yoke = new Part('yoke');
     var wagon = new Wagon({ name: 'New Horizons', yokes: [yoke] });
 
