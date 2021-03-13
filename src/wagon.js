@@ -30,6 +30,12 @@ class Wagon {
       this.clothes = obj.clothes;
     }
   }
+
+  addPart(part) {
+    if (part.type = 'wheel')  {
+      this.wheels.push(part)
+    }
+  }
 }
 
 module.exports = Wagon;

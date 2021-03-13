@@ -103,7 +103,7 @@ describe('Wagon', function() {
     assert.equal(wagon.clothes, clothes);
   });
 
-  it.skip('should be able to add a wheel', function() {
+  it('should be able to add a wheel', function() {
     var wheel1 = new Part('wheel');
     var wheel2 = new Part('wheel');
     var wagon = new Wagon({ name: 'Voyager', wheels: [wheel1] });
