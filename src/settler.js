@@ -3,6 +3,7 @@ class Settler {
     obj = obj || {};
     this.name = obj.name;
     this.age = obj.age;
+    this.nationality = 'unknown'
   }
 }
 
