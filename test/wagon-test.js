@@ -27,13 +27,13 @@ describe('Wagon', function() {
     assert.deepEqual(wagon.wheels, [wheel1, wheel2]);
   });
 
-  it.skip('should have no axles by default', function() {
+  it('should have no axles by default', function() {
     var wagon = new Wagon({ name: 'New Horizons' });
 
     assert.deepEqual(wagon.axles, []);
   });
 
-  it.skip('should be able to be constructed with axles', function() {
+  it('should be able to be constructed with axles', function() {
     var axle1 = new Part('axle');
     var axle2 = new Part('axle');
     var wagon = new Wagon({ name: 'New Horizons', axles: [axle1, axle2] });
@@ -41,13 +41,13 @@ describe('Wagon', function() {
     assert.deepEqual(wagon.axles, [axle1, axle2]);
   });
 
-  it.skip('should have no oxen by default', function() {
+  it('should have no oxen by default', function() {
     var wagon = new Wagon({ name: 'New Horizons' });
 
     assert.deepEqual(wagon.oxen, []);
   });
 
-  it.skip('should be able to be constructed with oxen', function() {
+  it('should be able to be constructed with oxen', function() {
     var ox1 = new Part('ox');
     var ox2 = new Part('ox');
     var wagon = new Wagon({ name: 'New Horizons', oxen: [ox1, ox2] });

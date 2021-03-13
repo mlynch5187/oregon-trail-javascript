@@ -7,6 +7,16 @@ class Wagon {
     } else {
       this.wheels = obj.wheels;
     }
+    if (obj.axles === undefined)  {
+      this.axles = [];
+    } else {
+      this.axles = obj.axles;
+    }
+    if (obj.oxen === undefined)  {
+      this.oxen = [];
+    } else {
+      this.oxen = obj.oxen;
+    }
   }
 }
 
