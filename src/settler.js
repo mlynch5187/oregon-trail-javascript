@@ -26,8 +26,12 @@ class Settler {
   }
 
   heal()  {
-    this.status = 'healthy'
-    this.ailments = [];
+    if (this.status !== 'dead')  {
+      this.status = 'healthy'
+      this.ailments = [];
+    } else {      
+      return `Sorry, we can\'t heal a corpse. ${this.name} needs a proper burial!`
+    }
   }
 }
 
