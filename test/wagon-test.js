@@ -241,7 +241,7 @@ describe('Wagon', function() {
     assert.isFalse(wagon.canTravel());
   });
 
-  it.skip('should not be able to travel without at least two working oxen', function() {
+  it('should not be able to travel without at least two working oxen', function() {
     var wagon = makeValidWagon();
 
     wagon.oxen[0].break();
