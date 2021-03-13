@@ -52,20 +52,20 @@ class Wagon {
   }
 
   canTravel() {
-    console.log(this.wheels[0].broken)
     if (this.wheels.length === 4 &&
         this.axles.length === 2 &&
         this.oxen.length >= 2 &&
-        this.yokes.length === 1 &&
-        this.settlers.length > 0 &&
+        this.yokes.length >= 1 &&
+        this.settlers.length >= 1 &&
         this.wheels[0].broken === false &&
         this.wheels[1].broken === false &&
         this.wheels[2].broken === false &&
         this.wheels[3].broken === false &&
         this.axles[0].broken === false &&
-        this.axles[0].broken === false &&
+        this.axles[1].broken === false &&
         this.oxen[0].broken === false &&
-        this.oxen[0].broken === false)  {
+        this.oxen[1].broken === false &&
+        this.settlers[0].status === 'healthy')  {
       return true;
     } else {
       return false;
