@@ -193,7 +193,7 @@ describe('Wagon', function() {
     assert.isFalse(wagon.canTravel());
   });
 
-  it.skip('should not be able to travel with only 1 axle', function() {
+  it('should not be able to travel with only 1 axle', function() {
     var wagon = makeValidWagon();
 
     wagon.axles.pop();
