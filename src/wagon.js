@@ -52,7 +52,7 @@ class Wagon {
   }
 
   canTravel() {
-    if (this.wheels.length === 4 && this.axles.length === 2 && this.oxen.length >= 2)  {
+    if (this.wheels.length === 4 && this.axles.length === 2 && this.oxen.length >= 2 && this.yokes.length === 1)  {
       return true;
     } else {
       return false;

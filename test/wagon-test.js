@@ -209,7 +209,7 @@ describe('Wagon', function() {
     assert.isFalse(wagon.canTravel());
   });
 
-  it.skip('should not be able to travel without a yoke', function() {
+  it('should not be able to travel without a yoke', function() {
     var wagon = makeValidWagon();
 
     wagon.yokes.pop();
