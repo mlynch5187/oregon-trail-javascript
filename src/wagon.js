@@ -24,6 +24,11 @@ class Wagon {
     } else {
       this.yokes = obj.yokes;
     }
+    if (obj.clothes === undefined)  {
+      this.clothes = [];
+    } else {
+      this.clothes = obj.clothes;
+    }
   }
 }
 

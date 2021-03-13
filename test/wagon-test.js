@@ -82,21 +82,21 @@ describe('Wagon', function() {
     assert.equal(wagon.ammunition, ammunition);
   });
 
-  it.skip('should be able to have ammunition of a different quantity', function() {
+  it('should be able to have ammunition of a different quantity', function() {
     var ammunition = new Gear('ammunition', 2000);
     var wagon = new Wagon({ name: 'New Horizons', ammunition: ammunition });
 
     assert.equal(wagon.ammunition, ammunition);
   });
 
-  it.skip('should be able to have clothes', function() {
+  it('should be able to have clothes', function() {
     var clothes = new Gear('clothes', 5);
     var wagon = new Wagon({ name: 'New Horizons', clothes: clothes });
 
     assert.equal(wagon.clothes, clothes);
   });
 
-  it.skip('should be able to have clothes of a different quantity', function() {
+  it('should be able to have clothes of a different quantity', function() {
     var clothes = new Gear('clothes', 8);
     var wagon = new Wagon({ name: 'New Horizons', clothes: clothes });
 
