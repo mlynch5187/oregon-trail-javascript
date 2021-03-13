@@ -52,7 +52,16 @@ class Wagon {
   }
 
   canTravel() {
-    if (this.wheels.length === 4 && this.axles.length === 2 && this.oxen.length >= 2 && this.yokes.length === 1 && this.settlers.length > 0)  {
+    console.log(this.wheels[0].broken)
+    if (this.wheels.length === 4 &&
+        this.axles.length === 2 &&
+        this.oxen.length >= 2 &&
+        this.yokes.length === 1 &&
+        this.settlers.length > 0 &&
+        this.wheels[0].broken === false &&
+        this.wheels[1].broken === false &&
+        this.wheels[2].broken === false &&
+        this.wheels[3].broken === false)  {
       return true;
     } else {
       return false;
